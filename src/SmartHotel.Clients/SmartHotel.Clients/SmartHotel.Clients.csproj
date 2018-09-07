@@ -20,7 +20,7 @@
     <PackageReference Include="Microcharts" Version="0.7.1-pre" />
     <PackageReference Include="Microcharts.Forms" Version="0.7.1-pre" />
     <PackageReference Include="Microsoft.AppCenter" Version="1.7.0" />
-    <PackageReference Include="Microsoft.AppCenter.Analytics" Version="1.6.0" />
+    <PackageReference Include="Microsoft.AppCenter.Analytics" Version="1.7.0" />
     <PackageReference Include="Microsoft.AppCenter.Crashes" Version="1.7.0" />
     <PackageReference Include="Microsoft.AppCenter.Distribute" Version="1.7.0" />
     <PackageReference Include="Microsoft.Identity.Client" Version="1.0.304142221-alpha" />
@@ -33,8 +33,8 @@
     <PackageReference Include="Xamarin.FFImageLoading.Forms" Version="2.2.17" />
     <PackageReference Include="Rg.Plugins.Popup" Version="1.0.4" />
     <PackageReference Include="Xamanimation" Version="1.0.0" />
-    <PackageReference Include="Xamarin.Forms" Version="2.5.0.121934" />
-    <PackageReference Include="Xamarin.Forms.Maps" Version="2.4.0.282" />
+    <PackageReference Include="Xamarin.Forms" Version="3.1.0.697729" />
+    <PackageReference Include="Xamarin.Forms.Maps" Version="3.1.0.697729" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Resources.Designer.cs">
