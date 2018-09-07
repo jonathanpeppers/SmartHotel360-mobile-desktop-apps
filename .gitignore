@@ -253,3 +253,4 @@ paket-files/
 
 # Xamarin
 *.orig
+Resource.designer.cs
