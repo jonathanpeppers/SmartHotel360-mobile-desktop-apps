@@ -64,7 +64,7 @@ function Profile {
 #Profile -msbuild $msbuild -version '15.8'
 
 # 16.0 P2
-$msbuild = 'C:\Program Files (x86)\Microsoft Visual Studio\Preview\Enterprise\MSBuild\15.0\Bin\MSBuild.exe'
+$msbuild = 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\MSBuild\Current\Bin\MSBuild.exe'
 Profile -msbuild $msbuild -version '16.0'
 
 # Print summary of results
