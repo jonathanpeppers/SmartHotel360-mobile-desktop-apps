@@ -1,13 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26730.3
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28710.17
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartHotel.Clients.Android", "SmartHotel.Clients\SmartHotel.Clients.Android\SmartHotel.Clients.Android.csproj", "{7E4A172B-1268-49C2-87BE-E563700BB22C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartHotel.Clients", "SmartHotel.Clients\SmartHotel.Clients\SmartHotel.Clients.csproj", "{7ADA23CF-CB3D-4898-822F-915E251ED8F1}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartHotel.Clients.UITests", "SmartHotel.Clients.UITests\SmartHotel.Clients.UITests.csproj", "{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -193,66 +191,6 @@ Global
 		{7ADA23CF-CB3D-4898-822F-915E251ED8F1}.UI Test|x64.Build.0 = UI Test|Any CPU
 		{7ADA23CF-CB3D-4898-822F-915E251ED8F1}.UI Test|x86.ActiveCfg = UI Test|Any CPU
 		{7ADA23CF-CB3D-4898-822F-915E251ED8F1}.UI Test|x86.Build.0 = UI Test|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.Ad-Hoc|Any CPU.ActiveCfg = Release|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.Ad-Hoc|Any CPU.Build.0 = Release|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.Ad-Hoc|ARM.ActiveCfg = Release|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.Ad-Hoc|ARM.Build.0 = Release|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.Ad-Hoc|iPhone.ActiveCfg = Release|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.Ad-Hoc|iPhone.Build.0 = Release|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.Ad-Hoc|iPhoneSimulator.ActiveCfg = Release|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.Ad-Hoc|iPhoneSimulator.Build.0 = Release|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.Ad-Hoc|x64.ActiveCfg = Release|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.Ad-Hoc|x64.Build.0 = Release|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.Ad-Hoc|x86.ActiveCfg = Release|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.Ad-Hoc|x86.Build.0 = Release|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.AppStore|Any CPU.ActiveCfg = Release|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.AppStore|Any CPU.Build.0 = Release|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.AppStore|ARM.ActiveCfg = Release|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.AppStore|ARM.Build.0 = Release|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.AppStore|iPhone.ActiveCfg = Release|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.AppStore|iPhone.Build.0 = Release|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.AppStore|iPhoneSimulator.ActiveCfg = Release|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.AppStore|iPhoneSimulator.Build.0 = Release|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.AppStore|x64.ActiveCfg = Release|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.AppStore|x64.Build.0 = Release|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.AppStore|x86.ActiveCfg = Release|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.AppStore|x86.Build.0 = Release|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.Debug|ARM.Build.0 = Debug|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.Debug|iPhone.ActiveCfg = Debug|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.Debug|iPhone.Build.0 = Debug|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.Debug|x64.Build.0 = Debug|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.Debug|x86.Build.0 = Debug|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.Release|ARM.ActiveCfg = Release|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.Release|ARM.Build.0 = Release|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.Release|iPhone.ActiveCfg = Release|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.Release|iPhone.Build.0 = Release|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.Release|x64.ActiveCfg = Release|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.Release|x64.Build.0 = Release|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.Release|x86.ActiveCfg = Release|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.Release|x86.Build.0 = Release|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.UI Test|Any CPU.ActiveCfg = UI Test|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.UI Test|Any CPU.Build.0 = UI Test|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.UI Test|ARM.ActiveCfg = UI Test|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.UI Test|ARM.Build.0 = UI Test|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.UI Test|iPhone.ActiveCfg = UI Test|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.UI Test|iPhone.Build.0 = UI Test|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.UI Test|iPhoneSimulator.ActiveCfg = UI Test|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.UI Test|iPhoneSimulator.Build.0 = UI Test|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.UI Test|x64.ActiveCfg = UI Test|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.UI Test|x64.Build.0 = UI Test|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.UI Test|x86.ActiveCfg = UI Test|Any CPU
-		{8CBF1E7B-7AB7-42BF-8960-6BBE971F9BC7}.UI Test|x86.Build.0 = UI Test|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
