@@ -35,7 +35,7 @@ namespace SmartHotel.Clients.Droid
             base.OnCreate(bundle);
 
             Forms.Init(this, bundle);
-            CarouselViewRenderer.Init();
+			CarouselView.FormsPlugin.Android.CarouselViewRenderer.Init();
             Renderers.Calendar.Init();
             Xamarin.FormsMaps.Init(this, bundle);
             Xamarin.Essentials.Platform.Init(this, bundle);
