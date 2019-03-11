@@ -3,8 +3,7 @@
     x:Name="Self"
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="SmartHotel.Clients.Core.Views.Templates.UwpNotificationItemTemplate"    
-    xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms">
+    x:Class="SmartHotel.Clients.Core.Views.Templates.UwpNotificationItemTemplate"    >
     <ContentView.Resources>
         <ResourceDictionary>
 
@@ -37,7 +36,7 @@
             </Style>
 
             <Style x:Key="NotificationIconStyle" 
-                   TargetType="ffimageloading:CachedImage">
+                   TargetType="Image">
                 <Setter Property="HeightRequest" Value="48" />
                 <Setter Property="Aspect" Value="AspectFit" />
                 <Setter Property="VerticalOptions" Value="Center" />
@@ -53,16 +52,16 @@
                 <RowDefinition Height="6*" />
                 <RowDefinition Height="20" />
             </Grid.RowDefinitions>
-            <ffimageloading:CachedImage
+            <Image
                 Grid.RowSpan="3"
                 Aspect="AspectFill">
-                <ffimageloading:CachedImage.Source>
+                <Image.Source>
                     <OnPlatform x:TypeArguments="ImageSource">
                         <On Platform="Android, iOS" Value="hero_image" />
                         <On Platform="UWP" Value="Assets/hero_image.png" />
                     </OnPlatform>
-                </ffimageloading:CachedImage.Source>
-            </ffimageloading:CachedImage>
+                </Image.Source>
+            </Image>
             <Grid 
                 Grid.Row="0"
                 Grid.RowSpan="2"
@@ -82,7 +81,7 @@
                         Grid.Row="0"
                         Text="Notifications" 
                         Style="{StaticResource NotificationsStyle}"/>
-                    <ffimageloading:CachedImage
+                    <Image
                         Grid.Row="1"
                         Source="{Binding Type, Converter={StaticResource NotificationTypeToIconConverter}}"
                         Style="{StaticResource NotificationIconStyle}"/>

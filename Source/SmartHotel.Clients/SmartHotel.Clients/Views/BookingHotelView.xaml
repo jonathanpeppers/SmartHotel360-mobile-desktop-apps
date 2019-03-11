@@ -3,7 +3,6 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="SmartHotel.Clients.Core.Views.BookingHotelView"   
-    xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"    
     xmlns:controls="clr-namespace:SmartHotel.Clients.Core.Controls;assembly=SmartHotel.Clients.Core"
     xmlns:templates="clr-namespace:SmartHotel.Clients.Core.Views.Templates;assembly=SmartHotel.Clients.Core"
     xmlns:utils="clr-namespace:SmartHotel.Clients.Core.Utils;assembly=SmartHotel.Clients.Core"  
@@ -240,26 +239,12 @@
                     HorizontalOptions="FillAndExpand" 
                     VerticalOptions="FillAndExpand">
                     <Grid>
-                        <ffimageloading:CachedImage 
+                        <Image 
                             Source="{Binding Hotel.DefaultPicture, Converter={StaticResource HotelImageConverter}}" 
                             Aspect="AspectFill"
-                            DownsampleToViewSize="true"
                             HeightRequest="420"
 					        HorizontalOptions="FillAndExpand"
-					        VerticalOptions="Start">
-                            <ffimageloading:CachedImage.LoadingPlaceholder>
-                                <OnPlatform x:TypeArguments="ImageSource">
-                                    <On Platform="Android, iOS" Value="placeholder_2" />
-                                    <On Platform="UWP" Value="Assets/placeholder_2.png" />
-                                </OnPlatform>
-                            </ffimageloading:CachedImage.LoadingPlaceholder>
-                            <ffimageloading:CachedImage.ErrorPlaceholder>
-                                <OnPlatform x:TypeArguments="ImageSource">
-                                    <On Platform="Android, iOS" Value="placeholder_2" />
-                                    <On Platform="UWP" Value="Assets/placeholder_2.png" />
-                                </OnPlatform>
-                            </ffimageloading:CachedImage.ErrorPlaceholder>
-                        </ffimageloading:CachedImage>
+					        VerticalOptions="Start" />
                         <Grid
                             x:Name="SubHeaderView"
                             BackgroundColor="{StaticResource WhiteColor}"

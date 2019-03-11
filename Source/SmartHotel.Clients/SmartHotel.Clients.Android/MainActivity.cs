@@ -39,7 +39,6 @@ namespace SmartHotel.Clients.Droid
             Renderers.Calendar.Init();
             Xamarin.FormsMaps.Init(this, bundle);
             Xamarin.Essentials.Platform.Init(this, bundle);
-            FFImageLoading.Forms.Platform.CachedImageRenderer.Init(false);
             Popup.Init(this, bundle);
             Acr.UserDialogs.UserDialogs.Init(this);
 

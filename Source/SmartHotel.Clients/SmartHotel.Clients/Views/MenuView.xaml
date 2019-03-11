@@ -2,7 +2,6 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:core="clr-namespace:SmartHotel.Clients.Core;assembly=SmartHotel.Clients.Core"
-             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"  
              xmlns:templates="clr-namespace:SmartHotel.Clients.Core.Views.Templates;assembly=SmartHotel.Clients.Core"
              xmlns:behaviors="clr-namespace:SmartHotel.Clients.Core.Behaviors;assembly=SmartHotel.Clients.Core" 
              xmlns:extensions="clr-namespace:SmartHotel.Clients.Core.MarkupExtensions"
@@ -45,18 +44,9 @@
             </Grid.RowDefinitions>
             <Grid 
                 Grid.Row="0">
-                <ffimageloading:CachedImage
+                <Image
                     Aspect="AspectFill"
-                    Source="{Binding UserAvatar}"
-                    CacheType="Disk"
-                    CacheDuration="30">>
-                    <ffimageloading:CachedImage.LoadingPlaceholder>
-                        <OnPlatform x:TypeArguments="ImageSource">
-                            <On Platform="Android, iOS" Value="avatar" />
-                            <On Platform="UWP" Value="Assets/avatar.png" />
-                        </OnPlatform>
-                    </ffimageloading:CachedImage.LoadingPlaceholder>
-                </ffimageloading:CachedImage>
+                    Source="{Binding UserAvatar}" />
                 <Grid 
                     BackgroundColor="#293849"
                     Opacity="0.6"/>

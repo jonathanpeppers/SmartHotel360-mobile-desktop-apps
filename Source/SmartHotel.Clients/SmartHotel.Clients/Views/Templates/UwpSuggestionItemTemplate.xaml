@@ -3,7 +3,6 @@
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="SmartHotel.Clients.Core.Views.Templates.UwpSuggestionItemTemplate"  
-    xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"   
     xmlns:controls="clr-namespace:SmartHotel.Clients.Core.Controls;assembly=SmartHotel.Clients.Core">
     <ContentView.Resources>
         <ResourceDictionary>
@@ -62,26 +61,13 @@
                 Grid.Row="0"
                 BackgroundColor="{Binding SuggestionType, Converter={StaticResource SuggestionTypeToColorConverter}}" 
                 Margin="0, 0, 6, 0"/>
-            <ffimageloading:CachedImage
+            <Image
                 Grid.Column="0"
                 Grid.Row="1"
                 Grid.RowSpan="3"
                 Source="{Binding Picture, Converter={StaticResource HotelImageConverter}}"
                 Aspect="AspectFill"
-                Margin="0, 0, 6, 0">
-                <ffimageloading:CachedImage.LoadingPlaceholder>
-                    <OnPlatform x:TypeArguments="ImageSource">
-                        <On Platform="Android, iOS" Value="placeholder_2" />
-                        <On Platform="UWP" Value="Assets/placeholder_2.png" />
-                    </OnPlatform>
-                </ffimageloading:CachedImage.LoadingPlaceholder>
-                <ffimageloading:CachedImage.ErrorPlaceholder>
-                    <OnPlatform x:TypeArguments="ImageSource">
-                        <On Platform="Android, iOS" Value="placeholder_2" />
-                        <On Platform="UWP" Value="Assets/placeholder_2.png" />
-                    </OnPlatform>
-                </ffimageloading:CachedImage.ErrorPlaceholder>
-            </ffimageloading:CachedImage>
+                Margin="0, 0, 6, 0" />
             <Label
                 Grid.Column="1"
                 Grid.Row="1"

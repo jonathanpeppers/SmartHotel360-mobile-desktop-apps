@@ -3,17 +3,14 @@
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="SmartHotel.Clients.Core.Views.Templates.HotelItemTemplate"
-    xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"   
     xmlns:controls="clr-namespace:SmartHotel.Clients.Core.Controls;assembly=SmartHotel.Clients.Core"
     xmlns:templates="clr-namespace:SmartHotel.Clients.Core.Views.Templates;assembly=SmartHotel.Clients.Core">
     <ContentView.Resources>
         <ResourceDictionary>
 
             <Style x:Key="HotelImageStyle" 
-                   TargetType="ffimageloading:CachedImage">
+                   TargetType="Image">
                 <Setter Property="Aspect" Value="AspectFill" />
-                <Setter Property="CacheType" Value="Disk" />
-                <Setter Property="CacheDuration" Value="30" />
                 <Setter Property="VerticalOptions" Value="Start" />
                 <Setter Property="HeightRequest" Value="84" />
                 <Setter Property="WidthRequest" Value="84" />
@@ -81,25 +78,12 @@
                 <RowDefinition Height="16" />
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
-            <ffimageloading:CachedImage
+            <Image
                 Grid.Column="0"
                 Grid.Row="0"
                 Grid.RowSpan="5"
                 Source="{Binding Picture, Converter={StaticResource HotelImageConverter}}"
-                Style="{StaticResource HotelImageStyle}">
-                <ffimageloading:CachedImage.LoadingPlaceholder>
-                    <OnPlatform x:TypeArguments="ImageSource">
-                        <On Platform="Android, iOS" Value="placeholder_2" />
-                        <On Platform="UWP" Value="Assets/placeholder_2.png" />
-                    </OnPlatform>
-                </ffimageloading:CachedImage.LoadingPlaceholder>
-                <ffimageloading:CachedImage.ErrorPlaceholder>
-                    <OnPlatform x:TypeArguments="ImageSource">
-                        <On Platform="Android, iOS" Value="placeholder_2" />
-                        <On Platform="UWP" Value="Assets/placeholder_2.png" />
-                    </OnPlatform>
-                </ffimageloading:CachedImage.ErrorPlaceholder>
-            </ffimageloading:CachedImage>
+                Style="{StaticResource HotelImageStyle}" />
             <Label
                 Grid.Column="1"
                 Grid.Row="0"

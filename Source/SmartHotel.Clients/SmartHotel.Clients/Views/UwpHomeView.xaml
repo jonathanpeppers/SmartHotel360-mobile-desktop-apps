@@ -7,7 +7,6 @@
     xmlns:ctrls="clr-namespace:SmartHotel.Clients.Core.Controls;assembly=SmartHotel.Clients.Core"
     xmlns:carousel="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
     xmlns:templates="clr-namespace:SmartHotel.Clients.Core.Views.Templates;assembly=SmartHotel.Clients.Core"
-    xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
     xmlns:controls="clr-namespace:SmartHotel.Clients.Core.Controls;assembly=SmartHotel.Clients.Core"     
     xmlns:extensions="clr-namespace:SmartHotel.Clients.Core.MarkupExtensions"
     xmlns:forms="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
@@ -206,18 +205,18 @@
                                 Text="{extensions:Translate RoomTemperature}"
                                 Style="{StaticResource BigChartTextStyle}"/>
 
-                            <!--<ffimageloading:CachedImage  
+                            <!--<Image  
                                 x:Name="BigRoomTemperatureChart"
                                 Opacity="0.5"
                                 Aspect="AspectFit"
                                 Margin="60, 84">
-                                <ffimageloading:CachedImage.Source>
+                                <Image.Source>
                                     <OnPlatform x:TypeArguments="ImageSource">
                                         <On Platform="Android, iOS" Value="room_temperature" />
                                         <On Platform="UWP" Value="Assets/room_temperature.png" />
                                     </OnPlatform>
-                                </ffimageloading:CachedImage.Source>
-                            </ffimageloading:CachedImage>-->
+                                </Image.Source>
+                            </Image>-->
                         </Grid>
                         <Grid 
                             Grid.Column="1"
@@ -234,17 +233,17 @@
                             <Label       
                                 Text="{extensions:Translate AmbientLight}"
                                 Style="{StaticResource BigChartTextStyle}"/>
-                            <!--<ffimageloading:CachedImage  
+                            <!--<Image  
                                 Aspect="AspectFit"
                                 Opacity="0.4"
                                 Margin="60">
-                                <ffimageloading:CachedImage.Source>
+                                <Image.Source>
                                     <OnPlatform x:TypeArguments="ImageSource">
                                         <On Platform="Android, iOS" Value="ambient_light" />
                                         <On Platform="UWP" Value="Assets/ambient_light.png" />
                                     </OnPlatform>
-                                </ffimageloading:CachedImage.Source>
-                            </ffimageloading:CachedImage>-->
+                                </Image.Source>
+                            </Image>-->
                         </Grid>
                         <Grid 
                             Grid.Column="3"
@@ -253,16 +252,16 @@
                         <!-- BE GREEN -->
                         <Grid
                             Grid.Column="4">
-                            <ffimageloading:CachedImage  
+                            <Image
                                 Aspect="AspectFit"
                                 Margin="60">
-                                <ffimageloading:CachedImage.Source>
+                                <Image.Source>
                                     <OnPlatform x:TypeArguments="ImageSource">
                                         <On Platform="Android, iOS" Value="be_green" />
                                         <On Platform="UWP" Value="Assets/be_green.png" />
                                     </OnPlatform>
-                                </ffimageloading:CachedImage.Source>
-                            </ffimageloading:CachedImage>
+                                </Image.Source>
+                            </Image>
                             <Label      
                                 Text="{extensions:Translate BeGreen}"
                                 Style="{StaticResource BigChartTextStyle}"/>
@@ -303,20 +302,20 @@
                                 <Label 
                                     Text="{extensions:Translate RoomTemperature}"
                                     Style="{StaticResource SmallChartTextStyle}"/>
-                                <!--<ffimageloading:CachedImage                                
+                                <!--<Image                                
                                     Opacity="0.5"
                                     Grid.Column="0"
                                     Grid.Row="0"
                                     Grid.RowSpan="2"
                                     Aspect="AspectFit"
                                     Margin="12, 6">
-                                    <ffimageloading:CachedImage.Source>
+                                    <Image.Source>
                                         <OnPlatform x:TypeArguments="ImageSource">
                                             <On Platform="Android, iOS" Value="room_temperature" />
                                             <On Platform="UWP" Value="Assets/room_temperature.png" />
                                         </OnPlatform>
-                                    </ffimageloading:CachedImage.Source>
-                                </ffimageloading:CachedImage>-->
+                                    </Image.Source>
+                                </Image>-->
                             </Grid>
                             <!-- AMBIENT LIGHT -->
                             <Grid  
@@ -330,32 +329,32 @@
                                 <Label 
                                     Text="{extensions:Translate AmbientLight}"
                                     Style="{StaticResource SmallChartTextStyle}"/>
-                                <!--<ffimageloading:CachedImage  
+                                <!--<Image  
                                     Opacity="0.4"
                                     Aspect="AspectFit"
                                     Margin="12, 6">
-                                    <ffimageloading:CachedImage.Source>
+                                    <Image.Source>
                                         <OnPlatform x:TypeArguments="ImageSource">
                                             <On Platform="Android, iOS" Value="ambient_light" />
                                             <On Platform="UWP" Value="Assets/ambient_light.png" />
                                         </OnPlatform>
-                                    </ffimageloading:CachedImage.Source>
-                                </ffimageloading:CachedImage>-->
+                                    </Image.Source>
+                                </Image>-->
                             </Grid>
                             <!-- BE GREEN -->
                             <Grid 
                                 Grid.Column="1"
                                 Grid.Row="1">
-                                <ffimageloading:CachedImage                                
+                                <Image                               
                                     Aspect="AspectFit"
                                     Margin="12, 6">
-                                    <ffimageloading:CachedImage.Source>
+                                    <Image.Source>
                                         <OnPlatform x:TypeArguments="ImageSource">
                                             <On Platform="Android, iOS" Value="be_green" />
                                             <On Platform="UWP" Value="Assets/be_green.png" />
                                         </OnPlatform>
-                                    </ffimageloading:CachedImage.Source>
-                                </ffimageloading:CachedImage>
+                                    </Image.Source>
+                                </Image>
                                 <Label 
                                     Text="{extensions:Translate BeGreen}"
                                     Style="{StaticResource SmallChartTextStyle}"/>
@@ -372,17 +371,17 @@
                             <RowDefinition Height="8*" />
                             <RowDefinition Height="2*" />
                         </Grid.RowDefinitions>
-                        <ffimageloading:CachedImage 
+                        <Image
                             Grid.Row="0"
                             Grid.RowSpan="2"
                             Aspect="AspectFill">
-                            <ffimageloading:CachedImage.Source>
+                            <Image.Source>
                                 <OnPlatform x:TypeArguments="ImageSource">
                                     <On Platform="Android, iOS" Value="img_1" />
                                     <On Platform="UWP" Value="Assets/img_5.png" />
                                 </OnPlatform>
-                            </ffimageloading:CachedImage.Source>
-                        </ffimageloading:CachedImage>
+                            </Image.Source>
+                        </Image>
                         <Grid   
                             Grid.Row="1"
                             BackgroundColor="{StaticResource OrangeColor}">
@@ -405,18 +404,18 @@
                             <RowDefinition Height="8*" />
                             <RowDefinition Height="2*" />
                         </Grid.RowDefinitions>
-                        <ffimageloading:CachedImage  
+                        <Image
                             Grid.Row="0"
                             Grid.RowSpan="2"
                             Source="img_2" 
                             Aspect="AspectFill">
-                            <ffimageloading:CachedImage.Source>
+                            <Image.Source>
                                 <OnPlatform x:TypeArguments="ImageSource">
                                     <On Platform="Android, iOS" Value="img_2" />
                                     <On Platform="UWP" Value="Assets/img_4.png" />
                                 </OnPlatform>
-                            </ffimageloading:CachedImage.Source>
-                        </ffimageloading:CachedImage>
+                            </Image.Source>
+                        </Image>
                         <Grid   
                             Grid.Row="1"
                             BackgroundColor="{StaticResource GreenColor}">
@@ -472,19 +471,19 @@
                                     Command="{Binding SuggestionsCommand}" />
                             </StackLayout.GestureRecognizers>
                         </StackLayout>
-                        <ffimageloading:CachedImage  
+                        <Image  
                             x:Name="RestaurantImage"
                             Grid.Column="1"
                             Grid.Row="0"
                             Grid.RowSpan="3"
                             Aspect="AspectFill">
-                            <ffimageloading:CachedImage.Source>
+                            <Image.Source>
                                 <OnPlatform x:TypeArguments="ImageSource">
                                     <On Platform="Android, iOS" Value="img_3" />
                                     <On Platform="UWP" Value="Assets/img_6.png" />
                                 </OnPlatform>
-                            </ffimageloading:CachedImage.Source>
-                        </ffimageloading:CachedImage>
+                            </Image.Source>
+                        </Image>
                         <Grid   
                             Grid.Column="0"
                             Grid.ColumnSpan="2"
@@ -542,19 +541,19 @@
                                     Command="{Binding SuggestionsCommand}" />
                             </StackLayout.GestureRecognizers>
                         </StackLayout>
-                        <ffimageloading:CachedImage  
+                        <Image  
                             x:Name="MoreInfoImage"
                             Grid.Column="1"
                             Grid.Row="0"
                             Grid.RowSpan="3"
                             Aspect="AspectFill">
-                            <ffimageloading:CachedImage.Source>
+                            <Image.Source>
                                 <OnPlatform x:TypeArguments="ImageSource">
                                     <On Platform="Android, iOS" Value="img_3" />
                                     <On Platform="UWP" Value="Assets/img_3.png" />
                                 </OnPlatform>
-                            </ffimageloading:CachedImage.Source>
-                        </ffimageloading:CachedImage>
+                            </Image.Source>
+                        </Image>
                         <Grid   
                             Grid.Column="0"
                             Grid.ColumnSpan="2"

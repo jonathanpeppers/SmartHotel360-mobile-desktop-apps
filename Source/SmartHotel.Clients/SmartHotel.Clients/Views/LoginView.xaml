@@ -4,7 +4,6 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:ctrls="clr-namespace:SmartHotel.Clients.Core.Controls;assembly=SmartHotel.Clients.Core"
     xmlns:effects="clr-namespace:SmartHotel.Clients.Core.Effects;assembly=SmartHotel.Clients.Core"
-    xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"   
     xmlns:xamanimation="clr-namespace:Xamanimation;assembly=Xamanimation"  
     xmlns:extensions="clr-namespace:SmartHotel.Clients.Core.MarkupExtensions"
     x:Class="SmartHotel.Clients.Core.Views.LoginView">
@@ -88,7 +87,7 @@
                     <RowDefinition Height="4*" />
                 </Grid.RowDefinitions>
                 <!-- Top image -->
-                <ffimageloading:CachedImage 
+                <Image 
                     Grid.Row="0"
                     Aspect="AspectFill"
                     Source="{OnPlatform

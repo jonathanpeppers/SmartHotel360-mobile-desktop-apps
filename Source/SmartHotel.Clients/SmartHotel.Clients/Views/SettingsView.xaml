@@ -4,7 +4,6 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:ctrls="clr-namespace:SmartHotel.Clients.Core.Controls"
     xmlns:converters="clr-namespace:SmartHotel.Clients.Core.Converters"
-    xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
     x:Class="SmartHotel.Clients.Core.Views.SettingsView"  
     xmlns:extensions="clr-namespace:SmartHotel.Clients.Core.MarkupExtensions"
     BackgroundColor="{StaticResource BackgroundColor}">
@@ -121,15 +120,15 @@
     </ContentPage.Resources>
     <ContentPage.Content>
         <Grid>
-            <ffimageloading:CachedImage 
+            <Image 
                 Aspect="AspectFill">
-                <ffimageloading:CachedImage.Source>
+                <Image.Source>
                     <OnPlatform x:TypeArguments="ImageSource">
                         <On Platform="Android, iOS" Value="img_header_background_1" />
                         <On Platform="UWP" Value="Assets/img_header_background_1.png" />
                     </OnPlatform>
-                </ffimageloading:CachedImage.Source>
-            </ffimageloading:CachedImage>
+                </Image.Source>
+            </Image>
             <ScrollView>
                 <StackLayout
                     Spacing="10">
