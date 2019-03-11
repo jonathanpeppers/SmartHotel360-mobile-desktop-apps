@@ -523,7 +523,7 @@
                                     CachingStrategy="RecycleElement"
                                     SeparatorVisibility="None"
                                     HasUnevenRows="True"
-                                    HeightRequest="{Binding HotelReviews.Count, {StaticResource CountToHeightConverter}}">
+                                    HeightRequest="{Binding HotelReviews.Count, Converter={StaticResource CountToHeightConverter}}">
                                     <ListView.ItemTemplate>
                                         <DataTemplate>
                                             <ViewCell>
