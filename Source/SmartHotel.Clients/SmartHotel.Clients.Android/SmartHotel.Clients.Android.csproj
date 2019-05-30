@@ -178,7 +178,7 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\img_2.png" />
   </ItemGroup>
-  <ItemGroup>
+  <ItemGroup> 
     <AndroidResource Include="Resources\drawable\img_3.png" />
   </ItemGroup>
   <ItemGroup>
@@ -1157,6 +1157,13 @@
     <PackageReference Include="Xamarin.GooglePlayServices.Tasks">
       <Version>60.1142.1</Version>
     </PackageReference>
+    <PackageReference Include="Xamarin.Google.Android.Material" Version="1.0.0-preview.13" />
+    <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.0.2-preview.13" />
+    <PackageReference Include="Xamarin.AndroidX.Legacy.Support.V4" Version="1.0.0-preview.13" />
+    <PackageReference Include="Xamarin.AndroidX.Browser" Version="1.0.0-preview.13" />
+    <PackageReference Include="Xamarin.AndroidX.CardView" Version="1.0.0-preview.13" />
+    <PackageReference Include="Xamarin.AndroidX.MediaRouter" Version="1.0.0-preview.13" />
+    <PackageReference Include="Xamarin.AndroidX.Migration" Version="1.0.0-preview.32" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
